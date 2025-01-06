@@ -40,3 +40,27 @@ h1{
     background-color: lightpink;
     color: white;
 }
+.todo-list {
+    list-style-type: none;
+    padding: 0px;
+}
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: lightpink;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.delete-btn {
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background-color: darkslategrey;
+    color: white;
+}
+.todo-item.completed {
+    text-decoration: line-through 2px darkslategrey;
+    opacity: 0.6;
+}

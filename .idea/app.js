@@ -27,7 +27,7 @@ const createTaskItem = (taskText) => {
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
     deleteBtn.classList.add('delete-btn');
-    deleteBtn.addEventListener('click', deleteTask)
+    deleteBtn.addEventListener('click', deleteTask);
 
     taskItem.appendChild(checkbox);
     taskItem.appendChild(taskTextSpan);
@@ -43,18 +43,19 @@ const deleteTask = (event) => {
 //cross out tasks
 const toggleTask = (event) => {
     const taskItem = event.target.parentNode;
-    taskItem.classList.toggle('completed');
+    taskItem.classList.toggle('completed')
 };
 //Event Listeners
 addTaskButton.addEventListener('click', addTask);
+todoList.addEventListener('change',toggleTask);
 todoInput.addEventListener('keydown',function(event){
     if(event.key === 'Enter') {
         addTask();
     }
 });
-todoList.addEventListener('change',toggleTask)
+
 //Examples of tasks
-const initialTasks = ['Jelk', 'Goon' , 'Mog'];
+const initialTasks = ['Buy batteries', 'Walk the dog' , 'Water the plants'];
 
 initialTasks.forEach((task) => {
     const taskItem = createTaskItem(task);
