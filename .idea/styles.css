@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: lightpink;
+}
+
+.todo-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: darkseagreen;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.25);
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.todo-input {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+.todo-input:focus {
+    outline: none;
+}
+#add-task-btn {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: lightpink;
+    color: white;
+}
